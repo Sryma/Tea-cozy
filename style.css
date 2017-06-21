@@ -57,16 +57,16 @@ a{
 	
 }
 a:hover{
-	background-color: orange;
+	background-color: gold;
 }
-.mission{
+#mission{
 	background-image: url("image/img-mission-background.jpg");
 	width:1200px;
 	height: 700px;
 	
 	padding-top: 70px;
 	/*border:5px solid white;*/
-	margin-left:70px;
+	margin:0 auto;
 	position: relative;
 
 }
@@ -79,8 +79,9 @@ a:hover{
 .m_1{
 	width: 1000px;
 	/*border:5px solid white;*/
-	margin-left:150px;
-	margin-bottom: 40px;
+	/*margin-left:150px;
+	margin-bottom: 40px;*/
+	margin: 0 auto;
 	display: flex;
 	flex-direction: row wrap;
 	align-items: center;
@@ -91,8 +92,9 @@ a:hover{
 .m_2{
 	width: 640px;
 	/*border:5px solid white;*/
-	margin-left:350px;
-	margin-top:40px;
+	/*margin-left:350px;
+	margin-top:40px;*/
+	margin: 0 auto;
 	margin-bottom: 40px;
 	display: flex;
 	flex-direction: row wrap;
@@ -116,7 +118,7 @@ a:hover{
 	height: 500px;
 	padding-top: 70px;
 	border:1px solid orange;
-	margin-left: 70px;
+	margin: 0 auto;
 }
 div{
 	display:block;
@@ -126,12 +128,11 @@ div{
 	flex-direction: row;
 	width:980px;
 	border:1px solid white;
-	margin-left: 150px;
+	margin:auto; 
 }
 .location{
 	flex:1;
 	width:300px;
-	height:400px;
 	background: black;
 	margin-right: 10px;
 }
