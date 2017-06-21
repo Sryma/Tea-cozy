@@ -3,43 +3,61 @@
 
 body{
 	font-family: Helvetica;
-	font-size: 22px;
+	/*font-size: 22px;*/
 	color: seashell;
 	background-color: black;
 	border: 1px solid red;
 	opacity: 0.9;
 	text-align: center;
+	margin:0px;
 
 }
 .header{
 	display: flex;
 	flex-direction:row;
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 	width:100%;
-	/*position:fixed;
-	z-index: 1;*/
+
+	position:fixed;
+	z-index: 1;
+	background-color: black;
+	/* we provide it as when we put fixed It doesnot part of the body,It behaves like individual Identity*/
+	margin-top:0px;
 }
 .child,.child_1{
 	flex:1;
-	border:5px solid white;
+	/*border:5px solid white;*/
 }
 .child{
-	font-size: 20px;
+	font-size: 10px;
+
+	text-align: left;
 }
 .child_1{
-	flex:2;
+	flex:1;
 }
 ul{
-	display: flex;
+	/*display: flex;
+	flex-flow: row;*/
 	list-style: none;
-	justify-content: flex-end;
-	align-content: center;
-}
+	/*justify-content: center;
+	align-content: center;*/
+	text-align: right;
+	}
 ul li{
 	flex:1;
-	padding: 20px 0px;
-	color: white!important;
+	display: inline-block;
+	margin-right: 20px;
+	
+	
 
+}
+a{
+	color: white;
+	
+}
+a:hover{
+	background-color: orange;
 }
 .mission{
 	background-image: url("image/img-mission-background.jpg");
@@ -49,6 +67,8 @@ ul li{
 	padding-top: 70px;
 	/*border:5px solid white;*/
 	margin-left:70px;
+	position: relative;
+
 }
 .spice{
 	width:100%;
@@ -115,6 +135,15 @@ div{
 	background: black;
 	margin-right: 10px;
 }
-.footer span{
-	text-align: right;
+.footer{
+	display:flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.com,.cozy {
+	flex:1;
+	
+}
+.cozy{
+	text-align: left;
 }
