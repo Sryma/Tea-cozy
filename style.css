@@ -1,0 +1,120 @@
+/*Assume having 5 individual div is very help, think them as a individual character, put the display: flex; flex-direction: row/column ; justify-content(x-axis), align-items(y-axis)
+ provide you the the most important thing*/
+
+body{
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	border: 1px solid red;
+	opacity: 0.9;
+	text-align: center;
+
+}
+.header{
+	display: flex;
+	flex-direction:row;
+	border: 1px solid white;
+	width:100%;
+	/*position:fixed;
+	z-index: 1;*/
+}
+.child,.child_1{
+	flex:1;
+	border:5px solid white;
+}
+.child{
+	font-size: 20px;
+}
+.child_1{
+	flex:2;
+}
+ul{
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	align-content: center;
+}
+ul li{
+	flex:1;
+	padding: 20px 0px;
+	color: white!important;
+
+}
+.mission{
+	background-image: url("image/img-mission-background.jpg");
+	width:1200px;
+	height: 700px;
+	
+	padding-top: 70px;
+	/*border:5px solid white;*/
+	margin-left:70px;
+}
+.spice{
+	width:100%;
+	height: 100px;
+	background-color: black;
+	margin-top: 250px;
+}
+.m_1{
+	width: 1000px;
+	/*border:5px solid white;*/
+	margin-left:150px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row wrap;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.m_2{
+	width: 640px;
+	/*border:5px solid white;*/
+	margin-left:350px;
+	margin-top:40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row wrap;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.box,.box_1{
+	flex:1;
+	flex-basis: 300px;
+	padding-top: 40px;
+
+	
+}
+
+#locations{
+	background-image: url("image/img-locations-background.jpg");
+	width:1200px;
+	height: 500px;
+	padding-top: 70px;
+	border:1px solid orange;
+	margin-left: 70px;
+}
+div{
+	display:block;
+}
+.container_1{
+	display: flex;
+	flex-direction: row;
+	width:980px;
+	border:1px solid white;
+	margin-left: 150px;
+}
+.location{
+	flex:1;
+	width:300px;
+	height:400px;
+	background: black;
+	margin-right: 10px;
+}
+.footer span{
+	text-align: right;
+}
