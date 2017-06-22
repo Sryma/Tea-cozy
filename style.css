@@ -3,7 +3,7 @@
 
 body{
 	font-family: Helvetica;
-	/*font-size: 22px;*/
+	font-size: 22px;
 	color: seashell;
 	background-color: black;
 	border: 1px solid red;
@@ -13,17 +13,24 @@ body{
 
 }
 .header{
-	display: flex;
-	flex-direction:row;
-	/*border: 1px solid white;*/
-	width:100%;
-
-	position:fixed;
-	z-index: 1;
-	background-color: black;
-	/* we provide it as when we put fixed It doesnot part of the body,It behaves like individual Identity*/
-	margin-top:0px;
+display: flex;
+flex-direction:row;
+/*border: 1px solid white;*/
+width:100%;
+align-items:center;
+position:fixed;
+z-index: 1;
+background-color: black;
+/* we provide it as when we put fixed It doesnot part of the body,It behaves like individual Identity*/
+margin-top:0px;
 }
+main {
+  padding-top: 69px; /* To offset fixed header */
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
+
 .child,.child_1{
 	flex:1;
 	/*border:5px solid white;*/
@@ -44,13 +51,12 @@ ul{
 	align-content: center;*/
 	text-align: right;
 	}
-ul li{
-	flex:1;
-	display: inline-block;
-	margin-right: 20px;
-	
-	
 
+ul li{
+flex:1;
+display: inline-block;
+margin-right: 20px;
+  padding: 20px 10px;
 }
 a{
 	color: white;
@@ -136,15 +142,7 @@ div{
 	background: black;
 	margin-right: 10px;
 }
-.footer{
-	display:flex;
-	flex-direction: column;
-	margin-top: 10px;
-}
-.com,.cozy {
-	flex:1;
-	
-}
-.cozy{
-	text-align: left;
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
