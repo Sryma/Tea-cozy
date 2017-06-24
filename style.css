@@ -1,54 +1,47 @@
-/*Assume having 5 individual div is very help, think them as a individual character, put the display: flex; flex-direction: row/column ; justify-content(x-axis), align-items(y-axis)
- provide you the the most important thing*/
 
 body{
 	font-family: Helvetica;
 	font-size: 22px;
 	color: seashell;
 	background-color: black;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	opacity: 0.9;
 	text-align: center;
 	margin:0px;
 
 }
+/*header section*/
 .header{
 display: flex;
 flex-direction:row;
 /*border: 1px solid white;*/
 width:100%;
+height: 69px;
 align-items:center;
 position:fixed;
 z-index: 1;
 background-color: black;
 /* we provide it as when we put fixed It doesnot part of the body,It behaves like individual Identity*/
 margin-top:0px;
+border-bottom: 1px solid seashell;
 }
-main {
+.main {
   padding-top: 69px; /* To offset fixed header */
   opacity: 0.9;
   width: 1200px;
   margin: auto;
 }
 
-.child,.child_1{
-	flex:1;
-	/*border:5px solid white;*/
-}
+
 .child{
 	font-size: 10px;
-
 	text-align: left;
 }
 .child_1{
 	flex:1;
 }
 ul{
-	/*display: flex;
-	flex-flow: row;*/
 	list-style: none;
-	/*justify-content: center;
-	align-content: center;*/
 	text-align: right;
 	}
 
@@ -56,15 +49,19 @@ ul li{
 flex:1;
 display: inline-block;
 margin-right: 20px;
-  padding: 20px 10px;
+padding: 20px 10px;
 }
 a{
 	color: white;
 	
+	
 }
 a:hover{
 	background-color: gold;
+
 }
+/* end of header section*/
+/* start of body section mission*/
 #mission{
 	background-image: url("image/img-mission-background.jpg");
 	width:1200px;
@@ -77,10 +74,10 @@ a:hover{
 
 }
 .spice{
-	width:100%;
+	width:1200px;
 	height: 100px;
 	background-color: black;
-	margin-top: 250px;
+	margin-top: 300px;
 }
 .m_1{
 	width: 1000px;
@@ -117,13 +114,16 @@ a:hover{
 
 	
 }
-
+h4{ 
+margin-top: 10px;
+ }
+/*start of location section*/
 #locations{
 	background-image: url("image/img-locations-background.jpg");
 	width:1200px;
 	height: 500px;
 	padding-top: 70px;
-	border:1px solid orange;
+	/*border:1px solid orange;*/
 	margin: 0 auto;
 }
 div{
@@ -131,18 +131,42 @@ div{
 }
 .container_1{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width:980px;
-	border:1px solid white;
-	margin:auto; 
+	/*border:1px solid white;*/
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center; 
+	
+}
+.address{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: space-between;
+	width:980px;
+	/*border: 1px solid red;*/
+	
+}
+.place h2{
+	width: 980px;
+	padding: 0px;
+	margin bottom:15px;
+	/*border: 2px solid orange;*/
 }
 .location{
-	flex:1;
 	width:300px;
 	background: black;
-	margin-right: 10px;
+	opacity: 1;
+	
+}
+/* end of location*/
+/*start of footer section*/
+#contact{
+	height: 200px;
 }
 footer {
   text-align: left;
   padding-left: 20px;
 }
+/* end of footer*/
